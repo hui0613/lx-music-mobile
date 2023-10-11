@@ -18,24 +18,24 @@ RCT_EXPORT_MODULE();
 // RCT_EXPORT_MODULE(AwesomeCalendarManager);
 RCT_EXPORT_METHOD(gzipFile: (NSString *)filePath destPath:(NSString *) destPath force:(BOOL)force resolve:(RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event gzipFile");
 }
 
 RCT_EXPORT_METHOD(unGzipFile: (NSString *)filePath destPath:(NSString *) destPath force:(BOOL)force resolve:(RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event unGzipFile");
 }
 
 
 
 RCT_EXPORT_METHOD(gzipStringToBase64: (NSString *)data resolve:(RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event gzipStringToBase64");
 }
 
 RCT_EXPORT_METHOD(unGzipFromBase64: (NSString *)data resolve:(RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event unGzipFromBase64");
 }
 
 @end

@@ -18,12 +18,12 @@ RCT_EXPORT_MODULE();
 // RCT_EXPORT_MODULE(AwesomeCalendarManager);
 RCT_EXPORT_METHOD(clearAppCache: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event clearAppCache");
+  resolve(NULL);
 }
 
 RCT_EXPORT_METHOD(getAppCacheSize: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event getAppCacheSize");
+  resolve(@"0");
 }
 
 @end

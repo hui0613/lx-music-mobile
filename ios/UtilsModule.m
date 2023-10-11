@@ -50,12 +50,12 @@ RCT_EXPORT_METHOD(getDeviceName: (RCTPromiseResolveBlock) resolve rejecter:(RCTP
 
 RCT_EXPORT_METHOD(isNotificationsEnabled: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event isNotificationsEnabled");
 }
 
 RCT_EXPORT_METHOD(openNotificationPermissionActivity: (RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
 {
-  RCTLogInfo(@"Pretending to create an event");
+  RCTLogInfo(@"Pretending to create an event openNotificationPermissionActivity");
 }
 
 RCT_EXPORT_METHOD(shareText: (NSString *)shareTitle title:(NSString *)title text:(NSString *)text resolve:(RCTPromiseResolveBlock) resolve rejecter:(RCTPromiseRejectBlock)reject)
@@ -107,6 +107,14 @@ RCT_EXPORT_METHOD(getWindowSize: (RCTPromiseResolveBlock) resolve rejecter:(RCTP
 RCT_EXPORT_METHOD(listenWindowSizeChanged)
 {
   RCTLogInfo(@"listenWindowSizeChanged");
+}
+
+RCT_EXPORT_METHOD(addListener: (NSString *)eventName){
+  
+}
+
+RCT_EXPORT_METHOD(removeListeners: (NSNumber * _Nonnull) count){
+  
 }
 
 @end
