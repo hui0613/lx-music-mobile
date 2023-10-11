@@ -21,6 +21,8 @@ export const windowSizeTools = {
   async init() {
     Dimensions.addEventListener('change', () => {
       void getWindowSize().then((size) => {
+        console.log("cccccccc")
+        console.log(size)
         if (!size.width) return
         const scale = Dimensions.get('screen').scale
         size.width = Math.trunc(size.width / scale)
